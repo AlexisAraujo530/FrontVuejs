@@ -1,21 +1,19 @@
 <script>
 export default {
-  name: 'FavoriteIcon',
-  props: {
-    selected: {
-      type: Boolean,
-      required: false
+    name: 'FavoriteIcon',
+    props: {
+      selected: {
+        type: Boolean,
+        required: false
     }
   }
 }
 </script>
 
-
-
 <template>
-<font-awesome-icon size="2xl" icon="fa-solid fa-star" 
-    class="estrella"
-   :class="{ selected: selected}"/>
+    <font-awesome-icon size="2xl" icon="fa-solid fa-star" 
+      class="estrella"
+      :class="{ selected: selected}"/>
 </template>
 
 <style scoped>
@@ -25,9 +23,7 @@ export default {
   border: 2px;
   border-color: black;
 }
-
 .estrella.selected {
-  color: #4b8cfb;
-  
+  color: #4b8cfb; 
 }
 </style>
